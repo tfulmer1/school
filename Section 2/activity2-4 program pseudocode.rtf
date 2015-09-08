@@ -1,0 +1,135 @@
+Thomas Fulmer
+Activity 2.4 - Building Algorithms
+
+
+Objects required:
+
+	vehicles
+		has one vin
+		has one make
+		has one model
+		has one year
+		has one rentedStatus
+	
+	customers
+		has one customerID
+		has one firstname
+		has one lastname
+		has one sufficientCredit
+		has one cleanDrivingRecord
+		has many contracts
+		
+	contracts
+		has one contractID
+		has many customers
+		has one startDay
+		has one startMonth
+		has one startYear
+		has one length
+		has one optionalInsuranceStatus
+		has one vehicle
+		
+	months
+		has one number //order of months
+		has one name
+		has one length
+		
+		
+Pseudocode for program:
+
+Start
+	Declarations
+            int contractID, customerID, startDay, startMonth, startYear, endDay, endMonth, endDay, vin, days, price, lengthContract
+            char newContract, additionalDriver, optionalInsuranceStatus
+            string firstName, lastName, 
+            
+            
+        prompt for input a new contract?
+	
+	while yes
+		prompt for contractID
+			if contractID > 99999 or contractID < 10000
+				System.out.println("This contract number is invalid")
+				QUIT program
+			endif
+			
+		prompt for existing customer
+			if existing customer
+				prompt for customerID
+			else
+				prompt new customer ID
+					if customerID > 999 or customerID < 100
+						System.out.println("This Customer ID is invalid")
+						QUIT program
+					endif
+				prompt for new customer name
+				split customer name into firstName, lastName
+				prompt for sufficientCredit
+				prompt for cleanDrivingRecord
+			endif
+		
+		link contract ID to this customer
+			
+		prompt for VIN of car to be rented
+			if VIN is currently rented
+				System.out.println("This vehicle is unavailable")
+				quit program
+			endif
+
+			prompt for start date of contract
+			split into and store startDay, startMonth, startYear
+				if startday < 1 or startday > startMonth.length
+					System.out.println("This date is invalid")
+					QUIT Program
+				endif
+			save date to contract
+		
+		prompt for length of contract
+			if length of contract <1 days || >30 days
+				System.out.println("Contract length is invalid")
+				QUIT program
+			endif
+			
+			if length of contract + startDay > startMonth.length
+				endDay = length of contract - startDay
+				endMonth = startMonth + 1
+			else
+				endDay = startDay + length of contract
+				endMonth = startMonth
+			endif
+		
+		prompt for optional insurance
+		
+		if length of contract > 10
+			price = length of contract * 25
+		else
+			days = length of contract - 10
+			price = 250 + (days * 18)
+		endif
+		
+		if optional insurance == yes
+			price += length of contract * 2.5
+		endif
+		
+		prompt for additional drivers
+			while additional drivers == yes
+				prompt for additional driver name
+					split into driver first, driver last
+				prompt for drivingRecord
+				prompt for additional driver
+			end
+		
+		print a copy of the contract
+			"Contract Number:  " + ContractID
+			"Customer Name:  "+ firstName +" " + lastName
+			"Start Date: " + startDay+ "//" + startMonth + "//" + startYear
+			"Return Date: " + endDay+ "//" + endMonth + "//" + endYear
+			"Vehicle to be rented: " + vehicle.vin + " " + vehicle.make + " " + vehicle.model
+			"Optional Insurance: " + optional insurance
+			"Price: " + price
+			"Sign here: ___________________"
+		end print out
+		
+		prompt for input additional contract?
+	end
+end
