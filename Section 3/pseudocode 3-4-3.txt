@@ -1,0 +1,15 @@
+Thomas Fulmer
+Pseudocode for 3.4.3
+
+Start
+	Turn on keyboard input
+
+	declare 5 character variables
+	
+	prompt for 5 digit number
+	
+	each character variable set to num.charAt(index)
+	
+	print each variable with spaces
+	
+end

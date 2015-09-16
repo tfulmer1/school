@@ -1,0 +1,10 @@
+Thomas Fulmer
+Pseudocode for 3.4.5
+
+Start
+
+	Set asci art values for letters of name as constants
+	
+	print each constant
+	
+end

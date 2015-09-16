@@ -1,0 +1,20 @@
+Thomas Fulmer
+Pseudocode for 3.4.4
+
+Start
+	Turn on keyboard input
+
+	set doubles for mpg, gallons, range, price, cost
+	
+	prompt for miles per gallon
+	
+	prompt for price per gallon
+	
+	compute range from gallons * mpg
+	
+	compute cost by (100.0 / mpg) * price
+		round this result
+		
+	output range and cost with flowery wording	
+	
+end

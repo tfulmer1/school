@@ -1,0 +1,21 @@
+Thomas Fulmer
+Pseudocode for 3.4.1
+
+Start
+	Turn on keyboard input
+	setup variables for meters, inches, feet, miles
+	
+	prompt for meters
+	
+	convert meters to inches
+	
+	calculate feet
+	
+	calculate miles
+	
+	take remainder from miles to make feet
+	
+	take remainer from feet to make final inches
+	
+	print miles, feet, inches with filler text
+end

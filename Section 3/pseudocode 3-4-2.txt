@@ -1,0 +1,21 @@
+Thomas Fulmer
+Pseudocode for 3.4.2
+
+Start
+	Turn on keyboard input
+	
+	define PI
+	
+	setup variable for radius
+	
+	prompt for radius
+	
+	variables for circumference, area, surface area, volume
+	
+	calculate circumference
+	calculate area
+	calculate surface area
+	calculate volume
+	
+	print results with some extra wording	
+end
