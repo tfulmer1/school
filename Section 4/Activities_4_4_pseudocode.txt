@@ -1,0 +1,127 @@
+Assignment 4.4.1 Pseudocode Start -- read three ages and sort them by age
+	Start
+		Prompt for person 1 name
+		prompt for person 1 age
+		prompt for person 2 name
+		prompt for person 2 age
+		prompt for person 3 name
+		prompt for person 3 age
+		
+		//Hmm...need a sorting system, would work better with objects/attributes
+		//Lets start with an arbitrary system
+		oldest = person 1 name
+		youngest = person 3 name
+	
+		//then test the random values
+		if person 1 age < person 3 age
+			youngest = person 1
+			oldest = person 3
+		
+		//We are now guaranteed that Person 1 and 2 are properly ordered, now we just have to figure out where person 2 fits in
+			if person 2 age > oldest age
+				oldest = perston 2
+			endif
+			if person 2 age < youngest age
+				youngest = person 2
+			endif	
+		//This logic notably does not account for people of the same age accurately nor can it handle more than 3 inputs
+		
+		output oldest, youngest
+	end program
+	
+	
+Assignment 4.4.2 Pseudocde start -- Take a floating wage and floating time card, compute pay and overtime (over 40 hours = 150%), print paycheck
+	Start
+		Prompt for employee name
+		prompt for wage
+		prompt for hours
+		
+		If hours > 40
+			pay = (40 * wage) + ((hours-40)*(wage*1.5))
+		else
+			pay = (hours * wage)
+		endif
+		
+		print out: pay to the order of (employee name) the amount of (pay)
+	end
+	
+Assignment 4.4.3 pseudocode start -- Computer an income tax based on the 1913 schedule provided
+/*
+1 percent on the first $50,000
+2 percent on the amount over $50,000 up to $75,000
+3 percent on the amount over $75,000 up to $100,000
+4 percent on the amount over $100,000 up to $250,000
+5 percent on the amount over $250,000 up to $500,000
+6 percent on the amount over $500,000.
+*/
+
+Start
+	Prompt for taxable income
+	
+	if income > 500000
+		sixrate = income - 500000
+		income = 500000
+	endif 
+	
+	if income > 250000
+		fiverate = income - 250000
+		income = 250000
+	endif
+	
+	if income > 100000
+		fourrate = income - 100000
+		income = 100000
+	endif
+	
+	if income > 75000
+		threerate = income - 75000
+		income = 75000
+	endif
+	
+	if income > 50000
+		tworate = income - 50000
+		income = 50000
+	endif
+	
+	onerate = income
+	
+	taxdue = onerate * .01 + tworate * .02 + threerate * .03 + fourrate * .04 + fiverate * .05 + sixrate * .06
+	
+	print the amount of taxes due to screen
+end
+
+Assignment 4.4.4 Pseudocode start -- Prompt for a month and print the nubmer of days
+
+Start
+	prompt for month
+		
+	if month = 2
+		print 28
+	endif
+	
+	if month = 1 or 3 or 5 or 7 or 8 or 10 or 12
+		print 31
+	endif
+	
+	if month = 4 or 6 or 9 or 11
+		print 30
+	endif
+end
+
+
+Assigninment 4.4.5 Pseudocode Start -- Calculate a leap year
+
+Start
+	Prompt for a year
+	
+	boolean leapyear = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));  // Conveniently, I wrote this for exercise 4.3.0 already
+	
+	if leapyear == true
+		print "Yep, leapyear"
+	end if
+	
+	if leapyear == false
+		print "Nope, not a leapyear""
+	endif
+End
+
