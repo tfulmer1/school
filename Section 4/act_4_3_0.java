@@ -34,7 +34,7 @@ public class act_4_3_0
 	tests instead of just ending the program
 	*/
 	try {
-		intmonth = Int, glad it looked goodeger.parseInt(month);
+		intmonth = Integer.parseInt(month);
 	} catch (NumberFormatException e) {
 		intmonth = 0;
 	}

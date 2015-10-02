@@ -75,7 +75,6 @@ public class act_4_4_1
 
 	//Ok, now we need to sort
 	//since there are only three people, we'll assign them randomly then fix
-	//Not efficient but won't matter in this case
 
 	String oldest = p1name;
 	String youngest = p3name;
