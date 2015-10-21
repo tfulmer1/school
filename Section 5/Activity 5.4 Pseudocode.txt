@@ -1,0 +1,69 @@
+Problem 1: Design a program that prompts the user once for a list of floating point values and at the end provides the user with teh average, the smallest, the largest and the range
+
+Start Problem 1
+	declare variables for new input, total, smallest, largest, average, range, number of inputs
+	declare a boolean for skipping math if needed
+	Prompt User to enter a list of floating point numbers and type done to end list
+	do {
+		take the next line of text
+		parse the int (catch exception with a flag to skip math this time)
+		if not skipping math this time
+			total += new input
+			if smallest > new input
+				smallest = new input
+			if largest < new input
+				largest = new input
+			inputs ++
+		else
+			reset boolean flag to do math next time
+	} while new input != done
+	average = total / inputs
+	range = largest - smallest
+	print out Average, smallest, largest, range
+end problem 1
+
+
+Problem 2: Write a program that takes a string and prints each character on a new line
+Start problem 2
+	Prompt for text
+	FOR loop where i is used in charAt method
+		print each iteration on a new line
+	end FOR
+end problem 2
+
+
+Problem 3:  Print out the  nth number in a Fibonacci sequence
+Start Problem 3
+	Prompt user for n
+	if n < 2
+		print "1"
+	else
+		for i < n, i++
+			new = old1 + old 2
+			old1 = old2
+			old2 = new
+		end for
+	Print new
+end problem 3
+
+Problem 4: Print a multiplication table
+Start Problem 4
+	Set i to 1, for 10 times
+		print i times each number from 1 - 10
+	end for
+end problem 4
+
+Problem 5: Simulate the drunkdards walk over 100 intersections
+Start Problem 5
+	Explain what's going on
+	set variable for north/south
+	set variable for east/west
+	for 100 times
+		random number 0-3
+		if 0 then north + 1
+		if 1 then  north - 1
+		if 2 then east + 1
+		if 3 then east -1
+	end for
+	print results
+end Problem 5

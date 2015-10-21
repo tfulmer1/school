@@ -1,26 +1,20 @@
 
 /*
-(((What this program does??)))
+(((Description of program)))
 Thomas Fulmer (lost)
 tdf2519@email.vccs.edu
-Last modified: (((Date)))
+Last modified: (((Date modified)))
 */
 
 import java.util.Scanner;
 
-public class ((program name))
+public class (((name)))
 {
 	public static void main(String[] args)
 	{
-	Scanner keyboard = new Scanner(System.in);
+	Scanner kb = new Scanner(System.in);
 	
-
-
-
-
-
-
-
+	
 
 
 	}
