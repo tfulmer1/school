@@ -1,0 +1,17 @@
+Class:  Student
+
+Attributes:
+-Name: String
+-Student ID: int
+-gradeRaw: int
+-gradeMax: int
+
+Methods:
++setName(String newName): void
++setID(int sid): void
++inputGrade(int score, int possible): void
++getName(): string
++getID(): int
++getRaw() : int
++getMax() : int
++getGradeAverage() : double

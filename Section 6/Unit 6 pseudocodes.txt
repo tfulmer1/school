@@ -1,0 +1,126 @@
+Begin Counter
+	Declare count variable as zero
+	reset count method
+		count = 0
+	upcount method
+		count++
+	downcount method
+		count--
+	getcount method
+		return count
+	display count method
+		println(count)
+	Main method
+		new counter
+		.resetcounter
+		.upcount
+		.upcount
+		.displaycount
+		.downcount
+		.downcount
+		.downcount
+		.displaycount
+		.upcount
+		int test = counter.getcount
+		println(test value: test)
+		.displaycount
+	end
+end
+
+
+Begin Hangman
+	declare Strings secret word, dispword, 
+	declare ints guesses, bad guesses
+	changeSecretWord method
+		take new word as secret word
+		create a new display word (masked)
+			for length of secret word add a ?
+		end
+	end
+	make guess method
+		if secretword.indexof(guess) exists
+			iterate over each character and if it matches then split the string into substrings and replace the ? with the guess
+		end
+		up the guess and bad guess counter as appropriate
+	end	
+	getDisplayWord method
+		return display word
+	get secret word method
+		return secret word
+	get guess count method
+		return guess
+	get badguesscount
+		return badguess
+	boolean is found?
+		if displayword = secretword
+	clear console method
+		try to do system commands to clear terminal
+		use escape characters to clear screen
+		print lots of lines to clear screen
+	end
+	Main method
+		use hardwired word for first round
+		set boolean for continue play
+		print instructions
+		while playmore is true
+			while not too many bad guesses have happened and word is not found
+				prompt for a character
+				makeguess method
+			end
+			if word is found
+				congratulate the user
+			else
+				call the user a loser
+			end
+			prompt if they want to play again
+			if no
+				end
+			else
+				prompt for a new word for player 2
+				clear screen method
+			end
+		end
+	end
+ Hangman
+ 
+ 
+ Begin Movie
+	declare strings for movie name and movie rating
+	declare ints for each rating
+	setname method
+		moviename = input
+	getname method
+		return name
+	setMPAA method
+		movierating = input
+	getMPAA method
+		return MPAA rating
+	inputRating method
+		upcount each rating based on input
+	getaverage method
+		weight all the variables
+		add and divide by count to get the average
+		output based on average rating
+	main method
+		create movie 1
+		create movie 2
+		prompt user for movie 1 data
+		prompt user for 5 movie 1 ratings
+		prompt user if they want extra ratings
+		prompt for movie 2 data
+		prompt for 5 movie 2 ratings
+		prompt user for extra ratings
+		print out movie 1 summary
+		movie1.getaverager method
+		print out movie 2 summary
+		movie2.getaverage method
+	end
+end movies
+	
+	
+	
+	
+	
+	
+	
+	
