@@ -1,0 +1,127 @@
+Unit 7 programs
+
+Problem 1: A class to handle addresses
+	boolean apt
+	String housenumber, street, aptnumber, city, state, zipcode
+	
+	method: Constructor(takes all inputs)
+		Assign all variables
+		if apartment boolean is true
+			add apartment number
+		else
+			leave apartment blank
+	end
+	
+	method: comesBefore(other address)
+		Use parseint to conver the zipcode to an int
+		return true or false
+	end
+	
+	method: printAddress()
+		If Apartment is true
+			print this version
+		else
+			print non apartment version
+		end
+	end
+
+	method: Main //for testing
+	
+		see if it's an apartment address
+			prompt for number, street
+			if apartment prompt for apartment
+			prompt for city, state, zipcode
+		create new address object, construct from above
+		
+		create a second using same method
+		
+		if compare addresses method returns true
+			print one way
+		else
+			print other way
+		end
+	end
+
+End Problem 1
+
+
+Problem 2: A class to calculate some soda can geometry
+
+	double radius, height, surfaceArea, volume;
+	
+	method: constructor (radius, height)
+		assign variables
+	end
+	
+	method: getSurfaceArea()
+		surface area = 2*pi*radius*height + 2*pi*radius*radius
+		return surface area
+	end
+	
+	method: getVolume()
+		volume = pi *radius*radius*height
+		return volume
+	end
+	
+	method: Main (testing purposes)
+		create new soda can
+		print line including surface area and volume as outputs
+	end
+
+	End problem 2
+
+
+Problem 3: A class to create cars and handle their mpg/travel gas usage/etc
+	define doubles for mpg and fuel in tank
+	
+	method: constructor (takes mpg argument)
+		mpg = mpg input
+	end
+	
+	method; addGas(Gallons input)
+		fuel += gallons input
+		println("Gas added")
+	end
+	
+	method: boolean noGas
+		check if the car runs out of gas
+		return true/false
+	end
+	
+	method; Drive(distance)
+		deduct fuel based on distance driven/mpg
+		check if car ran out of gas
+	end
+	
+	method: GetGasLevel()
+		returns current gas level or zero if car is empty
+	end
+	
+	Main //testing
+		initialize car
+		check gas to make sure constructor worked
+		add gas
+		drive
+		drive
+		drive
+		check gas
+		drive until out of gas
+		check gas (should be zero and not negative)
+		
+End Problem 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
