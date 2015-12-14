@@ -1,0 +1,72 @@
+Final Class Diagram:
+
+Class: Account
+Attributes:
+--Number of Accounts created (Static)
+--Account Number
+--Account Owner
+--Account Balance
+
+Methods:
+--Check Number of Accounts Created (Static)
+--Constructor
+--Withdraw
+--Deposit
+--Check Balance
+--Summarize Account
+
+
+Pseudocode:
+Begin Final Project
+	//Declare Variables
+	private static int numAccounts
+	private int accountNumber
+	private String accountOwner
+	private double accountBalance
+
+	//constructor
+	public Account(input name, input initial deposit)
+		create random object
+		account number = random object nextInt()
+		account owner = input name
+		accountBalance += input deposit
+		numAccounts++
+		Output confirmation text
+	end constructor
+	
+	//other methods
+	public void withdraw(input amount)
+		if account balance > input amount
+			balance -= input amount
+		else
+			insufficient funds method
+		end
+	end
+	
+	public void deposit (input amount)
+		account balance += input amount
+	end
+	
+	public void balanceCheck()
+		print the current balance to screen
+	end
+	
+	public void accountSummary()
+		print out a summary of all the account info
+	end
+	
+	public static int numberOfAccounts()
+		return numAccounts
+	end
+end final project
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

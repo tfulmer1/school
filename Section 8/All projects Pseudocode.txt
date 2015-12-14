@@ -1,0 +1,135 @@
+Unit 8 programs
+
+Problem 1:  create a random array of integers and do stuff to it
+	setup keyboard
+	create array of length 10
+	for i = 0, i < array.length, i++
+		array[i] = rand.nextInt(100)+1;
+	end
+	
+	declare variables for min (default to value 0), max (default to value 0), evenSum, oddSum, allSum;
+	
+	for (int number : numbers)
+		if greater than max
+			new max
+		if less than min
+			new min
+		allSum += number
+	end
+	
+	println("These are the ones at an even index")
+		for i = 0 counting to array length
+			if i is even
+				print number at this index
+			end
+		end
+	
+	println("Here are the even numbers")
+		for number in numbers
+			if number is even
+				print number
+			end
+		end
+	
+	println("Here is the list in reverse")
+		for i = array length - 1 counting down to 0
+			print the item at i index
+		end
+	
+	print min
+	print max
+	print odd sum
+	print even sum
+	print total sum
+End Problem 1
+
+
+Problem 2:  creates a bar chart
+	ask the user how many inputs they want on the chart
+	int size = input
+	new array labels of length = size
+	new array values of length = size
+	
+	int position = 0
+	int max = 0
+	
+	while position < length
+		prompt for a label
+		prompt for a value
+		if value > max
+			new max
+		end
+		move position
+	end
+	
+	reset position to 0
+	int bar = 0
+	
+	while position less than length
+		print the label
+		calculate relative bar length
+		print * based on the bar length calculat
+		move position
+	end
+End problem 2
+
+
+Problem 3:  A class to handle movie ticket sales
+	private static int[][] //setup 2d array with all seat/ticket prices shown
+	
+	private static void displaySeats()
+		print top with seat numbers
+		iterate through loop to show each row, display row number at front
+		explain table
+	end
+	
+	private static void buySeat(int price)
+		declare row/seat variables
+		if input price == 0
+			prompt user for what row they want
+			prompt user for what seat they want
+			if seat is available
+				sell seat
+			else
+				tell them the seat is sold
+			end
+		else
+			iterate from 9,9 back towards 0,0
+				if seat price == requested price
+					sell seat
+				end
+				if no seats found
+					"Sorry, nothing found at that price"
+				end
+			end
+		end
+	end
+	
+	main method()
+		welcome to theater
+		do while more seats want to be bought
+			display seats
+			prompt for desired price
+			buyseats method call
+			ask if they want more seats
+		end do while
+		thanks for buying tickets
+		displaySeats()
+	end
+End Problem 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
