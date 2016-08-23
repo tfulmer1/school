@@ -64,16 +64,16 @@ public class driver
             if ((girl.count >= 11) && (girl.count <=20))
                 salesLevels[1] = addGirl(salesLevels[1], girl);
             if ((girl.count >= 0) && (girl.count <=10))
-                salesLevels[0] = addGirl(salesLevels[0], girl);                
+                salesLevels[0] = addGirl(salesLevels[0], girl);      
         }
         System.out.println("---------------------------------");
         System.out.println("| TOTAL BOXES\t| # of Scounts\t|");
         System.out.println("---------------------------------");
         System.out.println("|0 - 10\t\t|\t" + salesLevels[0].length + "\t|");
-        System.out.println("|11 - 20\t|\t" + salesLevels[0].length + "\t|");
-        System.out.println("|21 - 30\t|\t" + salesLevels[0].length + "\t|");
-        System.out.println("|31 - 40\t|\t" + salesLevels[0].length + "\t|");
-        System.out.println("|41+\t\t|\t" + salesLevels[0].length + "\t|");
+        System.out.println("|11 - 20\t|\t" + salesLevels[1].length + "\t|");
+        System.out.println("|21 - 30\t|\t" + salesLevels[2].length + "\t|");
+        System.out.println("|31 - 40\t|\t" + salesLevels[3].length + "\t|");
+        System.out.println("|41+\t\t|\t" + salesLevels[4].length + "\t|");
         System.out.println("---------------------------------");
 	}
 }
