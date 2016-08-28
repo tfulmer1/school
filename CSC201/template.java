@@ -9,14 +9,13 @@ Last modified: (((Date)))
 
 import java.util.Scanner;
 
-public class U3_Problem3
+public class (((Class)))
 {
     public static Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] args)
 	{
 		
-	
 
 
 

@@ -1,15 +1,15 @@
 
 /*
-(((What this program does??)))
-Unit ((xx)) Problem ((xx))
+Tests Locker and combo lock classes
+Unit 3 Problem 2
 Thomas Fulmer (lost)
 tdf2519@email.vccs.edu
-Last modified: (((Date)))
+Last modified: 26 Aug 2016
 */
 
 import java.util.Scanner;
 
-public class (((Class)))
+public class Unittest
 {
     public static Scanner kb = new Scanner(System.in);
 
