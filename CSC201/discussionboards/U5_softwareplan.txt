@@ -1,0 +1,22 @@
+Unit 5 Discussion Board
+Thomas Fulmer (lost)
+tdf2519@email.vccs.edu
+
+Scenario: 
+You are a software developer for a Retail Point of Sale System Company. 
+A client has made a request to upgrade the current system from command line 
+interface to a graphic user interface. The client concerns on an effect to 
+the current system with the change. The client does not want to lose any 
+current data on the system. Provide recommendations and the change plan 
+including the below requirements to the customer.
+
+Requirements:
+Create a requirement plan (what need to be done to support this upgrade)
+Create a development plan (how to implement this upgrade with programming 
+details explanation including technical details on this document)
+Create testing plan (how to ensure that the new upgrade works without 
+affecting current system and no data lost.)
+Posting your recommendations and the change plan
+Once you have completed your recommendations and plan. Create a new thread 
+with your plan title and name in the subject line. Your posting must include 
+recommendations, a requirement plan, a development plan, and a testing plan.
