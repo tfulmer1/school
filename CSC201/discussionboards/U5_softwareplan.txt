@@ -20,3 +20,60 @@ Posting your recommendations and the change plan
 Once you have completed your recommendations and plan. Create a new thread 
 with your plan title and name in the subject line. Your posting must include 
 recommendations, a requirement plan, a development plan, and a testing plan.
+
+
+
+CLIENT RECOMMENDATIONS:
+--Client should provide details on a minimally viable product (Which aspects of the system must be included at deployment)
+--Client should provide detailed user stories of features, capabilities, etc their users want included
+--Client should allow their user base to participate in focus groups
+--Client should provide a desired development/deployment timeline 
+
+REQUIREMENTS PLAN: 
+--Software must have a GUI
+--Software must be compatable with existing systems
+--Software must preserve all existing data
+--Software must provide same functionality as CLI version
+
+DEVELOPMENT PLAN: 
+Step 1: Prep/planning 
+-- Existing CLI software should be analyzed and all classes/methods documented
+--all existing classes/methods should be tested to record sample outputs for later testing
+--Focus groups of users should be run to determine what kind of interface they want
+--Users should provide requested features/interface design considerations
+
+Step 2: Design Software 
+--Based on desired end state/Step 1 research, an initial software design concept (flow chart for logic flow, layout mock ups) should be created
+--Determine what areas will need development and what classes/methods can be reused in their current form
+--Present layout/design concept with client and adjust as needed
+
+Step 3: development
+--Software should be developed on a machine separate from the production chain but with duplicate data from production
+--Each class/method should be created with corresponding unit tests
+--Conduct Initial testing round, run all unit tests, create a test driver to test logic flow
+--Correct any errors until all tests pass
+--Create the user facing GUI based on pre-approved designs
+--Second round of testing: Do automated and user driven testing of the GUI to confirm it properly triggers all events and properly displays outputs
+--Correct any errors with GUI handling of already confirmed logic flow until tests are passed
+
+Step 4: Beta deployment
+--Identify small subset of users for initial deployment
+--Educated employees and monitor usage to identify flaws, bugs, poor workflow
+--Make tweeks to software as needed
+--Conduct a product review with product owners and beta teams to determine if product meets criteria
+
+Step 5: Full deployment
+--Snapshot/backup user systems and data
+--Conduct user training
+--Deploy new software to all stations
+--Confirm integrity of data after deployment
+
+
+TESTING PLAN:
+--Prior to development, all features of existing software should be run against a set of test queries
+--The results of each test query should be saved
+--Unit tests should be developed to compare output data from the new program with the saved results from the current software
+--Unit tests should note any deviation from expected outputs
+--Before migration to new software, a snapshot of existing data should be taken. After migration the original and new should be subject to a line by line comparison test to confirm data integrity
+--On an ongoing basis, target parts of the software for stress testing, compliance with current business needs, etc
+
