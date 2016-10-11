@@ -2,7 +2,7 @@ Unit 5 Discussion Board
 Thomas Fulmer (lost)
 tdf2519@email.vccs.edu
 
-Scenario: 
+Assignment Scenario: 
 You are a software developer for a Retail Point of Sale System Company. 
 A client has made a request to upgrade the current system from command line 
 interface to a graphic user interface. The client concerns on an effect to 
@@ -10,7 +10,7 @@ the current system with the change. The client does not want to lose any
 current data on the system. Provide recommendations and the change plan 
 including the below requirements to the customer.
 
-Requirements:
+Assignment Requirements:
 Create a requirement plan (what need to be done to support this upgrade)
 Create a development plan (how to implement this upgrade with programming 
 details explanation including technical details on this document)
@@ -21,7 +21,7 @@ Once you have completed your recommendations and plan. Create a new thread
 with your plan title and name in the subject line. Your posting must include 
 recommendations, a requirement plan, a development plan, and a testing plan.
 
-
+============ASSIGNMENT==============
 
 CLIENT RECOMMENDATIONS:
 --Client should provide details on a minimally viable product (Which aspects of the system must be included at deployment)
@@ -38,23 +38,23 @@ REQUIREMENTS PLAN:
 DEVELOPMENT PLAN: 
 Step 1: Prep/planning 
 -- Existing CLI software should be analyzed and all classes/methods documented
---all existing classes/methods should be tested to record sample outputs for later testing
---Focus groups of users should be run to determine what kind of interface they want
---Users should provide requested features/interface design considerations
+-- All existing classes/methods should be tested to record sample outputs for later testing
+-- Focus groups of users should be run to determine what kind of interface they want
+-- Users should provide requested features/interface design considerations
 
 Step 2: Design Software 
---Based on desired end state/Step 1 research, an initial software design concept (flow chart for logic flow, layout mock ups) should be created
---Determine what areas will need development and what classes/methods can be reused in their current form
---Present layout/design concept with client and adjust as needed
+-- Based on desired end state/Step 1 research, an initial software design concept (flow chart for logic flow, layout mock ups) should be created
+-- Determine what areas will need development and what classes/methods can be reused in their current form
+-- Present layout/design concept with client and adjust as needed
 
 Step 3: development
---Software should be developed on a machine separate from the production chain but with duplicate data from production
---Each class/method should be created with corresponding unit tests
---Conduct Initial testing round, run all unit tests, create a test driver to test logic flow
---Correct any errors until all tests pass
---Create the user facing GUI based on pre-approved designs
---Second round of testing: Do automated and user driven testing of the GUI to confirm it properly triggers all events and properly displays outputs
---Correct any errors with GUI handling of already confirmed logic flow until tests are passed
+-- Software should be developed on a machine separate from the production chain but with duplicate data from production
+-- Each class/method should be created with corresponding unit tests
+-- Conduct Initial testing round, run all unit tests, create a test driver to test logic flow
+-- Correct any errors until all tests pass
+-- Create the user facing GUI based on pre-approved designs
+-- Second round of testing: Do automated and user driven testing of the GUI to confirm it properly triggers all events and properly displays outputs
+-- Correct any errors with GUI handling of already confirmed logic flow until tests are passed
 
 Step 4: Beta deployment
 --Identify small subset of users for initial deployment
